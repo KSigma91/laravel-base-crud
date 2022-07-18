@@ -2,10 +2,10 @@
 
 @section('mainContent')
     <main>
-        <table>
+        {{-- <table>
             <thead>
                 <th>
-                    {{-- <tr>id</tr> --}}
+                    <tr>id</tr>
                     <tr>title</tr>
                     <tr>description</tr>
                     <tr>thumb</tr>
@@ -19,8 +19,8 @@
             </thead>
             <tbody>
                 @foreach ($comics as $comic)
-                    {{-- <tr>{{ $comic->id }}</tr> --}}
-                    <tr>{{ $comic[->title] }}</tr>
+                    <tr>{{ $comic->id }}</tr>
+                    <tr>{{ $comic->title }}</tr>
                     <tr>{{ $comic->description }}</tr>
                     <tr>{{ $comic->thumb }}</tr>
                     <tr>{{ $comic->price }}</tr>
@@ -31,6 +31,6 @@
                     <tr>{{ $comic->writers }}</tr>
                 @endforeach
             </tbody>
-        </table>
+        </table> --}}
     </main>
 @endsection
