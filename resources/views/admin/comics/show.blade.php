@@ -4,17 +4,16 @@
     <h1>Comics {{ $comic->id }}</h1>
 
     <table>
-        <thead>
+        {{-- <thead>
             <tr>
                 <th>Campo </th>
                 <th>Valore</th>
             </tr>
-        </thead>
+        </thead> --}}
         <tbody>
-            @foreach ($comic->toArray() as $key => $value)
+            @foreach ($comic->toArray() as $key)
                 <tr>
-                    <td{{ $key }}</td>
-                    <td>{{ $value }}</td>
+                    <td><big>{{ $key }}</big></td>
                 </tr>
             @endforeach
         </tbody>
